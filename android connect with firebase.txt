@@ -1,0 +1,14 @@
+open firebase-> create project-> after creating project -> click in android
+-> give package name-> next -> download google-service.json file-> past in app folder
+
+Also add dependency
+-> tools-> firebase-> real time database -> save and retrieve data
+-> click-> add realtime database to your app->
+ copy -> app/build.gradle dependency ..implementation "com.google....."
+ 
+	open gradle scripts folder->open build gradle (module firebase)
+past-> in dependency section.
+
+
+sync Now..
+
