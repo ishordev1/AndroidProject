@@ -1,3 +1,5 @@
+open tool-> click firebase-> realtime database -> first connect (signup).
+
 open firebase-> create project-> after creating project -> click in android
 -> give package name-> next -> download google-service.json file-> past in app folder
 
