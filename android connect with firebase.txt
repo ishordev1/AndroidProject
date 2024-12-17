@@ -1,6 +1,7 @@
 open tool-> click firebase-> realtime database -> first connect (signup).
 create project-> add dependency -> click accept dependency button it will auto added dependency or you go with manually process.
 
+in setting there is all options.
 
 open firebase-> create project-> after creating project -> click in android
 -> give package name-> next -> download google-service.json file-> past in app folder
