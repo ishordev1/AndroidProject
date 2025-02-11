@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img"
@@ -24,6 +23,7 @@
 
 
        />
+
    <Button
        android:id="@+id/counterApp"
        android:layout_width="wrap_content"
@@ -48,6 +48,21 @@
 app:layout_constraintLeft_toRightOf="@+id/counterApp"
        app:layout_constraintRight_toRightOf="parent"
        app:layout_constraintTop_toBottomOf="@+id/headerText"
+       />
+
+   <Button
+       android:id="@+id/newsApp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="36dp"
+       android:backgroundTint="@color/blue"
+       android:text="news App"
+       android:textSize="15sp"
+       app:layout_constraintHorizontal_bias="0.198"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/counterApp"
+
        />
 
 

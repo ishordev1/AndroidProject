@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class home extends AppCompatActivity {
 
-    Button btn, notes;
+    Button counterAppBtn, notesAppBtn,newAppBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,8 @@ public class home extends AppCompatActivity {
 
 
         //counter app code start
-        btn = findViewById(R.id.counterApp);
-        btn.setOnClickListener(new View.OnClickListener() {
+        counterAppBtn = findViewById(R.id.counterApp);
+        counterAppBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(home.this, MainActivity.class);
@@ -35,8 +35,8 @@ public class home extends AppCompatActivity {
         //counter app code end
 
         //notes app code start
-        notes = findViewById(R.id.notesApp);
-        notes.setOnClickListener(new View.OnClickListener() {
+        notesAppBtn = findViewById(R.id.notesApp);
+        notesAppBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(home.this, NotesMain.class);
@@ -45,6 +45,15 @@ public class home extends AppCompatActivity {
         });
         //notes app code end
 
+
+        newAppBtn=findViewById(R.id.newsApp);
+newAppBtn.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent=new Intent(home.this, news.class);
+        startActivity(intent);
+    }
+});
 
 
     }
