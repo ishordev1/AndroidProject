@@ -14,8 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class home extends AppCompatActivity {
 
-    Button btn, notes,fragmentBtn;
-
+    Button btn, notes,fragmentBtn,recycleView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +58,17 @@ public class home extends AppCompatActivity {
 
 // fragment code end
 
+    recycleView=findViewById(R.id.rview);
+    recycleView.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent=new Intent(home.this,RecycleViews.class);
+            startActivity(intent);
+        }
+    });
     }
+
+
 
 //    @Override
 //    public void onClick(View view) {
