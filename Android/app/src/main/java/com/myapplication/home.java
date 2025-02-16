@@ -14,7 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class home extends AppCompatActivity {
 
-    Button btn, notes;
+    Button btn, notes,fragmentBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,18 @@ public class home extends AppCompatActivity {
         });
         //notes app code end
 
+//fragment code start
 
+        fragmentBtn=findViewById(R.id.fragmentBtn);
+        fragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(home.this, FagmentApp.class);
+                startActivity(intent);
+            }
+        });
+
+// fragment code end
 
     }
 

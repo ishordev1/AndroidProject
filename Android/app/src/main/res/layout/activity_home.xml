@@ -1,54 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-
+android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img"
+
     tools:context=".home"
     >
+
 
    <TextView
        android:layout_width="match_parent"
        android:layout_height="90dp"
        android:gravity="center"
        android:text="All Tools Apps"
-       android:background="@color/green"
+       android:background="@color/pink"
        android:textSize="50sp"
        android:id="@+id/headerText"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
 
-
-       />
-   <Button
-       android:id="@+id/counterApp"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Counter App"
-       android:textSize="15sp"
-       android:layout_marginTop="5dp"
-    android:backgroundTint="@color/blue"
-       app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintRight_toLeftOf="@+id/notesApp"
-       app:layout_constraintTop_toBottomOf="@+id/headerText"
-        />
-
-   <Button
-       android:id="@+id/notesApp"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Notes Apps"
-       android:textSize="15sp"
-       android:layout_marginTop="5dp"
-       android:backgroundTint="@color/blue"
-app:layout_constraintLeft_toRightOf="@+id/counterApp"
-       app:layout_constraintRight_toRightOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/headerText"
+android:textColor="@color/white"
        />
 
+<!--       first  single row button start -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+          <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/counterApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Counter App"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/blue"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/notesApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes Apps"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/blue"
+                />
+
+         </LinearLayout>
+
+      </LinearLayout>
+
+<!--  end first row-->
+
+
+    <!--       first  single row button start -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+            <Button
+                android:id="@+id/newApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New App"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/blue"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/fragmentBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fragment"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/blue"
+                />
+
+
+
+    </LinearLayout>
+
+    <!--  end first row-->
+
+</LinearLayout>
