@@ -1,0 +1,7 @@
+switch one activity to another
+------------------------------------------
+first create button in any activity-> selcet that button in class file
+set on click listner there 
+                             which class wher to which class
+   Intent intent=new Intent(MainActivity.this,AddUser.class);
+        startActivity(intent);
