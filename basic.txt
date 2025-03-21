@@ -7,5 +7,5 @@ set on click listner there
         startActivity(intent);
 -----------------------------------------
 show message
- Toast.makeText(AddUser.this,"email and password is null",Toast.LENGTH_SHORT);
+ Toast.makeText(AddUser.this,"email and password is null",Toast.LENGTH_SHORT).show();
 ---------------------------------------------------------------
