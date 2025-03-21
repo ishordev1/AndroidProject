@@ -2,6 +2,8 @@ Two way to configure the firebase.
  i. configure with android studio
  ii. configure with json file.
 
+I. 
+
 first login in firebase
 open tool-> click firebase-> realtime database -> first connect -> in browser select the project .
 Automatic added the google-service.json file in the project.
@@ -9,8 +11,12 @@ Automatic added the google-service.json file in the project.
 
 also add SDK in your project -> same path -> tool-> firebase->realtimedatabase-> sdk->click on that
 accept
---------------------------------------------------------------------------------
 
+
+if not show google-service.json don't worry.
+
+--------------------------------------------------------------------------------
+ii. 
 Once you remove that google-service.json from the project then it will disconnect. and again to connect
 
 open tool-> click firebase-> realtime database -> first connect (signup).
@@ -18,23 +24,24 @@ create project-> add dependency -> click accept dependency button it will auto a
 in the setting, there are all options.
  download the google-service.json file-> past in app folder in the project.
 
-
+sync Now..
 or
 
 
-open firebase-> create project-> after creating project -> click in android
--> give package name-> next -> download google-service.json file-> past in app folder
+-----------------------------------------------------------------------------------------------
+make sure in your reatime database in firebase has read write permission.
+how give read write permission in firebase-----> go in realtime database ---> Rules --> make read, write true in json
+ex:
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+------------------------------------------------
 
-Also add dependency
--> tools-> firebase-> real time database -> save and retrieve data
--> click-> add realtime database to your app->
- copy -> app/build.gradle dependency ..implementation "com.google....."
- 
-	open gradle scripts folder->open build gradle (module firebase)
-past-> in dependency section.
+after all setup do you operation if any problem come check Logcat filter: FirebaseData
 
-
-sync Now..
 
 
 
