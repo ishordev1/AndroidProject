@@ -1,3 +1,18 @@
+Two way to configure the firebase.
+ i. configure with android studio
+ ii. configure with json file.
+
+first login in firebase
+open tool-> click firebase-> realtime database -> first connect -> in browser select the project .
+Automatic added the google-service.json file in the project.
+
+
+also add SDK in your project -> same path -> tool-> firebase->realtimedatabase-> sdk->click on that
+accept
+--------------------------------------------------------------------------------
+
+Once you remove that google-service.json from the project then it will disconnect. and again to connect
+
 open tool-> click firebase-> realtime database -> first connect (signup).
 create project-> add dependency -> click accept dependency button it will auto added dependency or you can go with manual process.
 in the setting, there are all options.
@@ -20,4 +35,8 @@ past-> in dependency section.
 
 
 sync Now..
+
+
+
+  Toast.makeText(MainActivity.this,"this is testing text",Toast.LENGTH_SHORT).show();
 
