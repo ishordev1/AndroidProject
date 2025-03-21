@@ -1,3 +1,22 @@
+Basic of FireBase first create 
+-> Project    
+ one project has multiple application. like FB, insta, twitter, etc
+          -> Apps 1
+          -> Apps 2 etc
+
+
+
+One project has only one Database. 
+That database stores all app data in a single table;
+          
+
+
+
+So Dont confuse
+
+
+
+
 Two way to configure the firebase.
  i. configure with android studio
  ii. configure with json file.
