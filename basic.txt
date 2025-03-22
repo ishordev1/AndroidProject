@@ -1,3 +1,11 @@
+
+--------------------------------------------------------
+How to Add Dependency in Android Studio Kotlin file.
+go to -> build.gradle.kts(module)
+past the dependency in this way ->   implementation("de.hdodenhof:circleimageview:3.1.0")
+sync the project in top this show
+---------------------------------------------------------
+
 switch one activity to another
 ------------------------------------------
 first create button in any activity-> selcet that button in class file
